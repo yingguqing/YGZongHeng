@@ -111,7 +111,7 @@ class YGUtil {
     static func saveCrypt(key:String,iv:String) {
         saveKeychain(service: AESKey, data: key)
         saveKeychain(service: AESIV, data: iv)
-    }
+    } 
     
     static func loadCrypt() -> Dictionary<String,String>? {
         if let key = loadKeychain(service: AESKey) as? String,
