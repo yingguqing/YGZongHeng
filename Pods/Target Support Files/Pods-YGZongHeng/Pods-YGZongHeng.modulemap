@@ -1,0 +1,6 @@
+framework module Pods_YGZongHeng {
+  umbrella header "Pods-YGZongHeng-umbrella.h"
+
+  export *
+  module * { export * }
+}

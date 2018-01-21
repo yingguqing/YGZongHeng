@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" id="5pi-IO-blI">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5pi-IO-blI" id="VWw-he-D9M">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="145.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Recommend_Book" translatesAutoresizingMaskIntoConstraints="NO" id="1aD-9k-iOj">
+                        <rect key="frame" x="10" y="10" width="90" height="126"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="6mV-zk-lzE"/>
+                            <constraint firstAttribute="height" constant="126" id="MEs-26-OJn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="雪中悍刀行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKl-Cj-CLf">
+                        <rect key="frame" x="115" y="15" width="97" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="江湖是一张珠帘。大人物小人物，是珠子，大故事小故事，是串线。情义二字，则是那些珠子的精气神。————开始收官中。最终章将以那一声“小二上酒”结尾。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os9-oT-hai">
+                        <rect key="frame" x="115" y="43" width="195" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="江湖是一张珠帘。大人物小人物，是珠子，大故事小故事，是串线。情义二字，则是那些珠子的精气神。————开始收官中。最终章将以那一声“小二上酒”结尾。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vg-tf-7qo">
+                        <rect key="frame" x="115" y="66" width="195" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="江湖是一张珠帘。大人物小人物，是珠子，大故事小故事，是串线。情义二字，则是那些珠子的精气神。————开始收官中。最终章将以那一声“小二上酒”结尾。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25P-vJ-e15">
+                        <rect key="frame" x="115" y="89" width="195" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="江湖是一张珠帘。大人物小人物，是珠子，大故事小故事，是串线。情义二字，则是那些珠子的精气神。————开始收官中。最终章将以那一声“小二上酒”结尾。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THf-lq-AWW">
+                        <rect key="frame" x="115" y="112" width="195" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Os9-oT-hai" secondAttribute="trailing" constant="10" id="AF4-Ou-0kM"/>
+                    <constraint firstItem="1aD-9k-iOj" firstAttribute="centerY" secondItem="VWw-he-D9M" secondAttribute="centerY" id="BcX-yB-Nqp"/>
+                    <constraint firstItem="2vg-tf-7qo" firstAttribute="top" secondItem="Os9-oT-hai" secondAttribute="bottom" constant="5" id="LTZ-1c-8JB"/>
+                    <constraint firstItem="Os9-oT-hai" firstAttribute="top" secondItem="VKl-Cj-CLf" secondAttribute="bottom" constant="5" id="OZ7-tJ-tlS"/>
+                    <constraint firstItem="25P-vJ-e15" firstAttribute="leading" secondItem="Os9-oT-hai" secondAttribute="leading" id="OvL-G7-WBy"/>
+                    <constraint firstItem="THf-lq-AWW" firstAttribute="leading" secondItem="Os9-oT-hai" secondAttribute="leading" id="Ukh-eD-ob5"/>
+                    <constraint firstItem="VKl-Cj-CLf" firstAttribute="top" secondItem="1aD-9k-iOj" secondAttribute="top" constant="5" id="W1K-nv-hOW"/>
+                    <constraint firstItem="25P-vJ-e15" firstAttribute="trailing" secondItem="Os9-oT-hai" secondAttribute="trailing" id="WV6-f9-kUs"/>
+                    <constraint firstItem="Os9-oT-hai" firstAttribute="leading" secondItem="VKl-Cj-CLf" secondAttribute="leading" id="XL1-Wp-faI"/>
+                    <constraint firstItem="25P-vJ-e15" firstAttribute="top" secondItem="2vg-tf-7qo" secondAttribute="bottom" constant="5" id="Xx3-cB-Qaw"/>
+                    <constraint firstItem="2vg-tf-7qo" firstAttribute="trailing" secondItem="Os9-oT-hai" secondAttribute="trailing" id="eMF-7a-Zey"/>
+                    <constraint firstItem="2vg-tf-7qo" firstAttribute="leading" secondItem="Os9-oT-hai" secondAttribute="leading" id="ptH-zB-HuK"/>
+                    <constraint firstItem="VKl-Cj-CLf" firstAttribute="leading" secondItem="1aD-9k-iOj" secondAttribute="trailing" constant="15" id="qE6-px-h8l"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VKl-Cj-CLf" secondAttribute="trailing" constant="20" symbolic="YES" id="sH8-er-PXh"/>
+                    <constraint firstItem="THf-lq-AWW" firstAttribute="trailing" secondItem="Os9-oT-hai" secondAttribute="trailing" id="sIx-X6-BJ8"/>
+                    <constraint firstItem="THf-lq-AWW" firstAttribute="top" secondItem="25P-vJ-e15" secondAttribute="bottom" constant="5" id="tfl-Xo-UT5"/>
+                    <constraint firstItem="1aD-9k-iOj" firstAttribute="leading" secondItem="VWw-he-D9M" secondAttribute="leading" constant="10" id="u0h-a3-gSe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-243" y="8"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Recommend_Book" width="69" height="92"/>
+    </resources>
+</document>

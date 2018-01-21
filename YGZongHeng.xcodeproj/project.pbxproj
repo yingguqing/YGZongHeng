@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		763F1563AC3F9FB3C09042FF /* Pods_YGZongHeng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2040325F751DFACB1219C82F /* Pods_YGZongHeng.framework */; };
+		DB2A95B01FF23ADB00B25DBD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95AF1FF23ADB00B25DBD /* BaseViewController.swift */; };
+		DB2A95B21FF2533700B25DBD /* YGNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95B11FF2533700B25DBD /* YGNotice.swift */; };
+		DB2A95CD1FF26A4700B25DBD /* TYAlertController+BlurEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95B61FF26A4700B25DBD /* TYAlertController+BlurEffects.m */; };
+		DB2A95CE1FF26A4700B25DBD /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95B81FF26A4700B25DBD /* UIImage+ImageEffects.m */; };
+		DB2A95CF1FF26A4700B25DBD /* TYAlertController+TransitionAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95BA1FF26A4700B25DBD /* TYAlertController+TransitionAnimate.m */; };
+		DB2A95D01FF26A4700B25DBD /* TYAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95BC1FF26A4700B25DBD /* TYAlertController.m */; };
+		DB2A95D11FF26A4700B25DBD /* TYAlertDropDownAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95BE1FF26A4700B25DBD /* TYAlertDropDownAnimation.m */; };
+		DB2A95D21FF26A4700B25DBD /* TYAlertFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95C01FF26A4700B25DBD /* TYAlertFadeAnimation.m */; };
+		DB2A95D31FF26A4700B25DBD /* TYAlertScaleFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95C21FF26A4700B25DBD /* TYAlertScaleFadeAnimation.m */; };
+		DB2A95D41FF26A4700B25DBD /* TYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95C41FF26A4700B25DBD /* TYAlertView.m */; };
+		DB2A95D51FF26A4700B25DBD /* TYBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95C61FF26A4700B25DBD /* TYBaseAnimation.m */; };
+		DB2A95D61FF26A4700B25DBD /* TYShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95C81FF26A4700B25DBD /* TYShowAlertView.m */; };
+		DB2A95D71FF26A4700B25DBD /* UIView+TYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95CA1FF26A4700B25DBD /* UIView+TYAlertView.m */; };
+		DB2A95D81FF26A4700B25DBD /* UIView+TYAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95CC1FF26A4700B25DBD /* UIView+TYAutoLayout.m */; };
+		DB2A95DA1FF26D2F00B25DBD /* YGBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95D91FF26D2F00B25DBD /* YGBookView.swift */; };
+		DB2A95DF1FF280BC00B25DBD /* YGBookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2A95DE1FF280BB00B25DBD /* YGBookView.xib */; };
+		DB2A95E11FF2859200B25DBD /* SearchBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2A95E01FF2859200B25DBD /* SearchBookCell.xib */; };
+		DB2A95E41FF2898400B25DBD /* YGNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95E31FF2898400B25DBD /* YGNotification.swift */; };
+		DB4EB3211FFB0EDF006202E2 /* YGChapterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4EB3201FFB0EDF006202E2 /* YGChapterLabel.swift */; };
+		DB553CA81FF1DEB400504764 /* ChapterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB553CA71FF1DEB400504764 /* ChapterEntity.swift */; };
+		DB7D231D2004ACC3006D2314 /* Book.db in Resources */ = {isa = PBXBuildFile; fileRef = DB7D231C2004ACC3006D2314 /* Book.db */; };
+		DB7D231F2004AED3006D2314 /* YGDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7D231E2004AED3006D2314 /* YGDBManager.swift */; };
+		DB931F441FF0F4C4008EFA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB931F421FF0F4C4008EFA5E /* Main.storyboard */; };
+		DB931F461FF0F4C4008EFA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB931F451FF0F4C4008EFA5E /* Assets.xcassets */; };
+		DB9320021FF130A5008EFA5E /* YGUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9320001FF130A5008EFA5E /* YGUtil.swift */; };
+		DB9320031FF130A5008EFA5E /* YGString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9320011FF130A5008EFA5E /* YGString.swift */; };
+		DB9320071FF130C3008EFA5E /* BookShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9320051FF130C3008EFA5E /* BookShelfViewController.swift */; };
+		DB93200C1FF130E8008EFA5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93200A1FF130E8008EFA5E /* AppDelegate.swift */; };
+		DB9320101FF13144008EFA5E /* BookEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93200F1FF13144008EFA5E /* BookEntity.swift */; };
+		DB9320121FF13734008EFA5E /* YGNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9320111FF13734008EFA5E /* YGNetwork.swift */; };
+		DBBF3D7E1FFBB51A001FE393 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBF3D7D1FFBB51A001FE393 /* QuickLook.framework */; };
+		DBC1D5242004FEF5007CBEFC /* ZonghengWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1D5232004FEF5007CBEFC /* ZonghengWebViewController.swift */; };
+		DBD20F6A1FF216CB004A40FF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD20F691FF216CB004A40FF /* SearchViewController.swift */; };
+		DBD20F6C1FF221F7004A40FF /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD20F6B1FF221F7004A40FF /* BookCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB931FA71FF0F5A6008EFA5E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2040325F751DFACB1219C82F /* Pods_YGZongHeng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YGZongHeng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		902993E565F77E5377470D32 /* Pods-YGZongHeng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YGZongHeng.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YGZongHeng/Pods-YGZongHeng.debug.xcconfig"; sourceTree = "<group>"; };
+		D9551296B8D541B8681C776B /* Pods-YGZongHeng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YGZongHeng.release.xcconfig"; path = "Pods/Target Support Files/Pods-YGZongHeng/Pods-YGZongHeng.release.xcconfig"; sourceTree = "<group>"; };
+		DB2A95AF1FF23ADB00B25DBD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DB2A95B11FF2533700B25DBD /* YGNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGNotice.swift; sourceTree = "<group>"; };
+		DB2A95B51FF26A4700B25DBD /* TYAlertController+BlurEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TYAlertController+BlurEffects.h"; sourceTree = "<group>"; };
+		DB2A95B61FF26A4700B25DBD /* TYAlertController+BlurEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TYAlertController+BlurEffects.m"; sourceTree = "<group>"; };
+		DB2A95B71FF26A4700B25DBD /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		DB2A95B81FF26A4700B25DBD /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		DB2A95BA1FF26A4700B25DBD /* TYAlertController+TransitionAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TYAlertController+TransitionAnimate.m"; sourceTree = "<group>"; };
+		DB2A95BB1FF26A4700B25DBD /* TYAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertController.h; sourceTree = "<group>"; };
+		DB2A95BC1FF26A4700B25DBD /* TYAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertController.m; sourceTree = "<group>"; };
+		DB2A95BD1FF26A4700B25DBD /* TYAlertDropDownAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertDropDownAnimation.h; sourceTree = "<group>"; };
+		DB2A95BE1FF26A4700B25DBD /* TYAlertDropDownAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertDropDownAnimation.m; sourceTree = "<group>"; };
+		DB2A95BF1FF26A4700B25DBD /* TYAlertFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertFadeAnimation.h; sourceTree = "<group>"; };
+		DB2A95C01FF26A4700B25DBD /* TYAlertFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertFadeAnimation.m; sourceTree = "<group>"; };
+		DB2A95C11FF26A4700B25DBD /* TYAlertScaleFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertScaleFadeAnimation.h; sourceTree = "<group>"; };
+		DB2A95C21FF26A4700B25DBD /* TYAlertScaleFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertScaleFadeAnimation.m; sourceTree = "<group>"; };
+		DB2A95C31FF26A4700B25DBD /* TYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertView.h; sourceTree = "<group>"; };
+		DB2A95C41FF26A4700B25DBD /* TYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertView.m; sourceTree = "<group>"; };
+		DB2A95C51FF26A4700B25DBD /* TYBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYBaseAnimation.h; sourceTree = "<group>"; };
+		DB2A95C61FF26A4700B25DBD /* TYBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYBaseAnimation.m; sourceTree = "<group>"; };
+		DB2A95C71FF26A4700B25DBD /* TYShowAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYShowAlertView.h; sourceTree = "<group>"; };
+		DB2A95C81FF26A4700B25DBD /* TYShowAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYShowAlertView.m; sourceTree = "<group>"; };
+		DB2A95C91FF26A4700B25DBD /* UIView+TYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYAlertView.h"; sourceTree = "<group>"; };
+		DB2A95CA1FF26A4700B25DBD /* UIView+TYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYAlertView.m"; sourceTree = "<group>"; };
+		DB2A95CB1FF26A4700B25DBD /* UIView+TYAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYAutoLayout.h"; sourceTree = "<group>"; };
+		DB2A95CC1FF26A4700B25DBD /* UIView+TYAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYAutoLayout.m"; sourceTree = "<group>"; };
+		DB2A95D91FF26D2F00B25DBD /* YGBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGBookView.swift; sourceTree = "<group>"; };
+		DB2A95DE1FF280BB00B25DBD /* YGBookView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGBookView.xib; sourceTree = "<group>"; };
+		DB2A95E01FF2859200B25DBD /* SearchBookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchBookCell.xib; sourceTree = "<group>"; };
+		DB2A95E31FF2898400B25DBD /* YGNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGNotification.swift; sourceTree = "<group>"; };
+		DB4EB3201FFB0EDF006202E2 /* YGChapterLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGChapterLabel.swift; sourceTree = "<group>"; };
+		DB553CA71FF1DEB400504764 /* ChapterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterEntity.swift; sourceTree = "<group>"; };
+		DB7D231C2004ACC3006D2314 /* Book.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Book.db; sourceTree = "<group>"; };
+		DB7D231E2004AED3006D2314 /* YGDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDBManager.swift; sourceTree = "<group>"; };
+		DB931F391FF0F4C4008EFA5E /* YGZongHeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YGZongHeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB931F431FF0F4C4008EFA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB931F451FF0F4C4008EFA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB9320001FF130A5008EFA5E /* YGUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGUtil.swift; sourceTree = "<group>"; };
+		DB9320011FF130A5008EFA5E /* YGString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGString.swift; sourceTree = "<group>"; };
+		DB9320051FF130C3008EFA5E /* BookShelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookShelfViewController.swift; sourceTree = "<group>"; };
+		DB93200A1FF130E8008EFA5E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB93200F1FF13144008EFA5E /* BookEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookEntity.swift; sourceTree = "<group>"; };
+		DB9320111FF13734008EFA5E /* YGNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGNetwork.swift; sourceTree = "<group>"; };
+		DB9320141FF138B9008EFA5E /* YGZongHeng-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YGZongHeng-Bridging-Header.h"; sourceTree = "<group>"; };
+		DBBF3D7D1FFBB51A001FE393 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		DBC1D5232004FEF5007CBEFC /* ZonghengWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonghengWebViewController.swift; sourceTree = "<group>"; };
+		DBD20F671FF20B01004A40FF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBD20F691FF216CB004A40FF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DBD20F6B1FF221F7004A40FF /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB931F361FF0F4C4008EFA5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBF3D7E1FFBB51A001FE393 /* QuickLook.framework in Frameworks */,
+				763F1563AC3F9FB3C09042FF /* Pods_YGZongHeng.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82983AAE94AA418ECE941E05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				902993E565F77E5377470D32 /* Pods-YGZongHeng.debug.xcconfig */,
+				D9551296B8D541B8681C776B /* Pods-YGZongHeng.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB2A95B41FF26A4700B25DBD /* Blur Effects */ = {
+			isa = PBXGroup;
+			children = (
+				DB2A95B51FF26A4700B25DBD /* TYAlertController+BlurEffects.h */,
+				DB2A95B61FF26A4700B25DBD /* TYAlertController+BlurEffects.m */,
+				DB2A95B71FF26A4700B25DBD /* UIImage+ImageEffects.h */,
+				DB2A95B81FF26A4700B25DBD /* UIImage+ImageEffects.m */,
+			);
+			path = "Blur Effects";
+			sourceTree = "<group>";
+		};
+		DB2A95B91FF26A4700B25DBD /* TYAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				DB2A95BA1FF26A4700B25DBD /* TYAlertController+TransitionAnimate.m */,
+				DB2A95BB1FF26A4700B25DBD /* TYAlertController.h */,
+				DB2A95BC1FF26A4700B25DBD /* TYAlertController.m */,
+				DB2A95BD1FF26A4700B25DBD /* TYAlertDropDownAnimation.h */,
+				DB2A95BE1FF26A4700B25DBD /* TYAlertDropDownAnimation.m */,
+				DB2A95BF1FF26A4700B25DBD /* TYAlertFadeAnimation.h */,
+				DB2A95C01FF26A4700B25DBD /* TYAlertFadeAnimation.m */,
+				DB2A95C11FF26A4700B25DBD /* TYAlertScaleFadeAnimation.h */,
+				DB2A95C21FF26A4700B25DBD /* TYAlertScaleFadeAnimation.m */,
+				DB2A95C31FF26A4700B25DBD /* TYAlertView.h */,
+				DB2A95C41FF26A4700B25DBD /* TYAlertView.m */,
+				DB2A95C51FF26A4700B25DBD /* TYBaseAnimation.h */,
+				DB2A95C61FF26A4700B25DBD /* TYBaseAnimation.m */,
+				DB2A95C71FF26A4700B25DBD /* TYShowAlertView.h */,
+				DB2A95C81FF26A4700B25DBD /* TYShowAlertView.m */,
+				DB2A95C91FF26A4700B25DBD /* UIView+TYAlertView.h */,
+				DB2A95CA1FF26A4700B25DBD /* UIView+TYAlertView.m */,
+				DB2A95CB1FF26A4700B25DBD /* UIView+TYAutoLayout.h */,
+				DB2A95CC1FF26A4700B25DBD /* UIView+TYAutoLayout.m */,
+			);
+			path = TYAlertController;
+			sourceTree = "<group>";
+		};
+		DB931F301FF0F4C4008EFA5E = {
+			isa = PBXGroup;
+			children = (
+				DB931F3B1FF0F4C4008EFA5E /* YGZongHeng */,
+				DB931F3A1FF0F4C4008EFA5E /* Products */,
+				DBBF3D7B1FFBB513001FE393 /* Frameworks */,
+				82983AAE94AA418ECE941E05 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		DB931F3A1FF0F4C4008EFA5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB931F391FF0F4C4008EFA5E /* YGZongHeng.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB931F3B1FF0F4C4008EFA5E /* YGZongHeng */ = {
+			isa = PBXGroup;
+			children = (
+				DB9320131FF138A6008EFA5E /* Other */,
+				DB93200E1FF13128008EFA5E /* Entity */,
+				DB931FFF1FF130A5008EFA5E /* Util */,
+				DB9320041FF130C3008EFA5E /* ViewController */,
+				DB9320091FF130E8008EFA5E /* Supporting Files */,
+			);
+			path = YGZongHeng;
+			sourceTree = "<group>";
+		};
+		DB931FFF1FF130A5008EFA5E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DB2A95B11FF2533700B25DBD /* YGNotice.swift */,
+				DB9320001FF130A5008EFA5E /* YGUtil.swift */,
+				DB9320011FF130A5008EFA5E /* YGString.swift */,
+				DB9320111FF13734008EFA5E /* YGNetwork.swift */,
+				DB2A95D91FF26D2F00B25DBD /* YGBookView.swift */,
+				DB2A95E31FF2898400B25DBD /* YGNotification.swift */,
+				DB4EB3201FFB0EDF006202E2 /* YGChapterLabel.swift */,
+				DB7D231E2004AED3006D2314 /* YGDBManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DB9320041FF130C3008EFA5E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DB2A95AF1FF23ADB00B25DBD /* BaseViewController.swift */,
+				DB9320051FF130C3008EFA5E /* BookShelfViewController.swift */,
+				DBC1D5232004FEF5007CBEFC /* ZonghengWebViewController.swift */,
+				DBD20F691FF216CB004A40FF /* SearchViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DB9320091FF130E8008EFA5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB7D231C2004ACC3006D2314 /* Book.db */,
+				DB931F421FF0F4C4008EFA5E /* Main.storyboard */,
+				DB931F451FF0F4C4008EFA5E /* Assets.xcassets */,
+				DB93200A1FF130E8008EFA5E /* AppDelegate.swift */,
+				DBD20F671FF20B01004A40FF /* Info.plist */,
+				DBD20F6B1FF221F7004A40FF /* BookCell.xib */,
+				DB2A95E01FF2859200B25DBD /* SearchBookCell.xib */,
+				DB2A95DE1FF280BB00B25DBD /* YGBookView.xib */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB93200E1FF13128008EFA5E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DB93200F1FF13144008EFA5E /* BookEntity.swift */,
+				DB553CA71FF1DEB400504764 /* ChapterEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DB9320131FF138A6008EFA5E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DB2A95B41FF26A4700B25DBD /* Blur Effects */,
+				DB2A95B91FF26A4700B25DBD /* TYAlertController */,
+				DB9320141FF138B9008EFA5E /* YGZongHeng-Bridging-Header.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		DBBF3D7B1FFBB513001FE393 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF3D7D1FFBB51A001FE393 /* QuickLook.framework */,
+				2040325F751DFACB1219C82F /* Pods_YGZongHeng.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB931F381FF0F4C4008EFA5E /* YGZongHeng */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB931F4D1FF0F4C4008EFA5E /* Build configuration list for PBXNativeTarget "YGZongHeng" */;
+			buildPhases = (
+				40437C26FB40D69BF30226A6 /* [CP] Check Pods Manifest.lock */,
+				DB931F351FF0F4C4008EFA5E /* Sources */,
+				DB931F361FF0F4C4008EFA5E /* Frameworks */,
+				DB931F371FF0F4C4008EFA5E /* Resources */,
+				DB931FA71FF0F5A6008EFA5E /* Embed Frameworks */,
+				0F71478889F0F9DDBB125176 /* [CP] Embed Pods Frameworks */,
+				C1CB19B6D5F5D5A03ACB5A0A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YGZongHeng;
+			productName = YGZongHeng;
+			productReference = DB931F391FF0F4C4008EFA5E /* YGZongHeng.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB931F311FF0F4C4008EFA5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = yingguqing;
+				TargetAttributes = {
+					DB931F381FF0F4C4008EFA5E = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DB931F341FF0F4C4008EFA5E /* Build configuration list for PBXProject "YGZongHeng" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = DB931F301FF0F4C4008EFA5E;
+			productRefGroup = DB931F3A1FF0F4C4008EFA5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB931F381FF0F4C4008EFA5E /* YGZongHeng */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB931F371FF0F4C4008EFA5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7D231D2004ACC3006D2314 /* Book.db in Resources */,
+				DB2A95E11FF2859200B25DBD /* SearchBookCell.xib in Resources */,
+				DBD20F6C1FF221F7004A40FF /* BookCell.xib in Resources */,
+				DB2A95DF1FF280BC00B25DBD /* YGBookView.xib in Resources */,
+				DB931F461FF0F4C4008EFA5E /* Assets.xcassets in Resources */,
+				DB931F441FF0F4C4008EFA5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F71478889F0F9DDBB125176 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YGZongHeng/Pods-YGZongHeng-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YGZongHeng/Pods-YGZongHeng-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40437C26FB40D69BF30226A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YGZongHeng-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1CB19B6D5F5D5A03ACB5A0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YGZongHeng/Pods-YGZongHeng-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB931F351FF0F4C4008EFA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB2A95D71FF26A4700B25DBD /* UIView+TYAlertView.m in Sources */,
+				DBD20F6A1FF216CB004A40FF /* SearchViewController.swift in Sources */,
+				DB2A95CE1FF26A4700B25DBD /* UIImage+ImageEffects.m in Sources */,
+				DB2A95B21FF2533700B25DBD /* YGNotice.swift in Sources */,
+				DB2A95B01FF23ADB00B25DBD /* BaseViewController.swift in Sources */,
+				DB2A95CD1FF26A4700B25DBD /* TYAlertController+BlurEffects.m in Sources */,
+				DB2A95DA1FF26D2F00B25DBD /* YGBookView.swift in Sources */,
+				DB2A95D11FF26A4700B25DBD /* TYAlertDropDownAnimation.m in Sources */,
+				DBC1D5242004FEF5007CBEFC /* ZonghengWebViewController.swift in Sources */,
+				DB2A95D81FF26A4700B25DBD /* UIView+TYAutoLayout.m in Sources */,
+				DB9320031FF130A5008EFA5E /* YGString.swift in Sources */,
+				DB2A95D21FF26A4700B25DBD /* TYAlertFadeAnimation.m in Sources */,
+				DB2A95D61FF26A4700B25DBD /* TYShowAlertView.m in Sources */,
+				DB2A95D01FF26A4700B25DBD /* TYAlertController.m in Sources */,
+				DB7D231F2004AED3006D2314 /* YGDBManager.swift in Sources */,
+				DB2A95CF1FF26A4700B25DBD /* TYAlertController+TransitionAnimate.m in Sources */,
+				DB2A95D41FF26A4700B25DBD /* TYAlertView.m in Sources */,
+				DB93200C1FF130E8008EFA5E /* AppDelegate.swift in Sources */,
+				DB2A95E41FF2898400B25DBD /* YGNotification.swift in Sources */,
+				DB4EB3211FFB0EDF006202E2 /* YGChapterLabel.swift in Sources */,
+				DB553CA81FF1DEB400504764 /* ChapterEntity.swift in Sources */,
+				DB2A95D51FF26A4700B25DBD /* TYBaseAnimation.m in Sources */,
+				DB9320121FF13734008EFA5E /* YGNetwork.swift in Sources */,
+				DB2A95D31FF26A4700B25DBD /* TYAlertScaleFadeAnimation.m in Sources */,
+				DB9320021FF130A5008EFA5E /* YGUtil.swift in Sources */,
+				DB9320071FF130C3008EFA5E /* BookShelfViewController.swift in Sources */,
+				DB9320101FF13144008EFA5E /* BookEntity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB931F421FF0F4C4008EFA5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB931F431FF0F4C4008EFA5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB931F4B1FF0F4C4008EFA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB931F4C1FF0F4C4008EFA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB931F4E1FF0F4C4008EFA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 902993E565F77E5377470D32 /* Pods-YGZongHeng.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3N24VTN26;
+				INFOPLIST_FILE = "$(SRCROOT)/YGZongHeng/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sijiu.newgamebox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YGZongHeng/Other/YGZongHeng-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DB931F4F1FF0F4C4008EFA5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9551296B8D541B8681C776B /* Pods-YGZongHeng.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3N24VTN26;
+				INFOPLIST_FILE = "$(SRCROOT)/YGZongHeng/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sijiu.newgamebox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YGZongHeng/Other/YGZongHeng-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB931F341FF0F4C4008EFA5E /* Build configuration list for PBXProject "YGZongHeng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB931F4B1FF0F4C4008EFA5E /* Debug */,
+				DB931F4C1FF0F4C4008EFA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB931F4D1FF0F4C4008EFA5E /* Build configuration list for PBXNativeTarget "YGZongHeng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB931F4E1FF0F4C4008EFA5E /* Debug */,
+				DB931F4F1FF0F4C4008EFA5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB931F311FF0F4C4008EFA5E /* Project object */;
+}
