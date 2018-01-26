@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -191,7 +191,7 @@
 		003B64E76DBC075C69F2A5C082B78D04 /* ESPullToRefresh+Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ESPullToRefresh+Manager.swift"; path = "Sources/ESPullToRefresh+Manager.swift"; sourceTree = "<group>"; };
 		02CA612B770BF33964EA9133967F4BEA /* Pods-YGZongHeng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YGZongHeng.debug.xcconfig"; sourceTree = "<group>"; };
 		02E462A3C1E9DB0230DB27624BE8B545 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		036BBB6BE1601ED2786258C042B1D0FE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		036BBB6BE1601ED2786258C042B1D0FE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		039F326E5EB8BE78C4C9F844E59285CB /* NoPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPadding.swift; path = Sources/CryptoSwift/NoPadding.swift; sourceTree = "<group>"; };
 		043C068D9CE3EA1448FD3E546DD9E478 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
 		04FF23F0D2CE9F5659D044C3931BEEF1 /* Rabbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Sources/CryptoSwift/Rabbit.swift; sourceTree = "<group>"; };
@@ -201,7 +201,7 @@
 		111B7A849629B3A45D1C5F51F76A02A7 /* Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Padding.swift; path = Sources/CryptoSwift/Padding.swift; sourceTree = "<group>"; };
 		11834D92FF2A5C234D337E3F68218C41 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
 		127A517C18F65CB115A0E37DB35BCB58 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		15B589E4EFE9DC3A903C8A4F08D6E8A8 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		15B589E4EFE9DC3A903C8A4F08D6E8A8 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		170E59EF48A1E20BD293DA8CC16AD8EA /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
 		1A41BC0F60A7C52226CC3F8E0C6BEC90 /* SHA3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA3.swift; path = Sources/CryptoSwift/SHA3.swift; sourceTree = "<group>"; };
 		1B8802A80792F45085426DBE8906EF05 /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
@@ -223,7 +223,7 @@
 		2CAA867121DEAC9CC7DBB95C58343DC3 /* PBKDF2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF2.swift; path = Sources/CryptoSwift/PKCS/PBKDF2.swift; sourceTree = "<group>"; };
 		2DBC71101D07BACB08B0AE6864C48517 /* ES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ES.swift; path = Sources/ES.swift; sourceTree = "<group>"; };
 		328A15D56CA05F34D4763B60574CE62E /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
-		33AA23A100C6B20C38E1F0A6CEA2F9C1 /* Pods_YGZongHeng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YGZongHeng.framework; path = "Pods-YGZongHeng.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33AA23A100C6B20C38E1F0A6CEA2F9C1 /* Pods_YGZongHeng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YGZongHeng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AF12B6676B1710516356933DEAD9AF /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		38D2669AF9F9AFF82D89F772A26875D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D47FA021A5BC7BCDBCF7199EA81E0CF /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
@@ -247,12 +247,12 @@
 		58690773DF8DB6A6BF5735D21AB2C6B1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		5AC6F4EF8BAD7515EFECA05455433BE8 /* RandomAccessCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomAccessCryptor.swift; path = Sources/CryptoSwift/RandomAccessCryptor.swift; sourceTree = "<group>"; };
 		5B86C9C089CC84798AD2DA3D58CF2AEF /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
-		5C72ED66C79E4CDF2549705B83FAEAEE /* ESPullToRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ESPullToRefresh.modulemap; sourceTree = "<group>"; };
+		5C72ED66C79E4CDF2549705B83FAEAEE /* ESPullToRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ESPullToRefresh.modulemap; sourceTree = "<group>"; };
 		5E67B962F27A12391ECC6C95684F861F /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
 		5FC6C609F9DF46029676283BB0BBDD47 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
 		60ABFB4D3A71C55EF99DF28DA9276C21 /* PCBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PCBC.swift; path = Sources/CryptoSwift/BlockMode/PCBC.swift; sourceTree = "<group>"; };
 		62E3B3DFBEA1FB8857889E50D08C0A40 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
-		651E78FFB8D977B02BCF79E3DDCCF922 /* ESPullToRefresh.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ESPullToRefresh.bundle; path = ESPullToRefresh.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		651E78FFB8D977B02BCF79E3DDCCF922 /* ESPullToRefresh.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESPullToRefresh.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6555D8018D05959B6AF6C6689BE2B060 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		664ABEB6C7D5F29808EBE8E006596844 /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
@@ -277,7 +277,7 @@
 		7AC5650134AD5CBCC2FD0798BB50D86C /* Updatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Updatable.swift; path = Sources/CryptoSwift/Updatable.swift; sourceTree = "<group>"; };
 		7DFB3430DB12C007658E8D6173A8863C /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
 		7F26DD765E806307BF8CD3B803661AFA /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
-		81326EF0FE59646A8E5DFF5F85B824CB /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81326EF0FE59646A8E5DFF5F85B824CB /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B5D83EE9C6103390017184EA7ECDC2 /* CFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CFB.swift; path = Sources/CryptoSwift/BlockMode/CFB.swift; sourceTree = "<group>"; };
 		850848BB20447446181E9FBD64D6686C /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
 		8593BB9E6E6E698631ECE6620DA96489 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 		90E2B9F6E88506811435B286A30AE2B6 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
 		90FEBB24C14F377A8B91AC96003DAD63 /* ResourceBundle-ESPullToRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ESPullToRefresh-Info.plist"; sourceTree = "<group>"; };
 		9391A21D64F30664877B430609C6ECF3 /* CSArrayType+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/CSArrayType+Foundation.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9792F598EAA3D2221FC179A59DBDB302 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		988E3C203299CEFEB9F3EF328B500354 /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Sources/CryptoSwift/Foundation/Data+Extension.swift"; sourceTree = "<group>"; };
 		9B2E415E2A04593D1BC8614568ED1C80 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
@@ -305,12 +305,12 @@
 		AD5C1C848A7C5ECDDCDE3320577856AA /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = Sources/CryptoSwift/PKCS/PKCS7.swift; sourceTree = "<group>"; };
 		AE105FF2F51C86E2DF8D2411EB2EE46A /* AES+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AES+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/AES+Foundation.swift"; sourceTree = "<group>"; };
 		AFAE2309E82DE1AB0454109E9CF1BE1A /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
-		AFB9CE8FAC2395C53C97A13D934B2D0C /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		AFB9CE8FAC2395C53C97A13D934B2D0C /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		AFF6014E2B6F3B824356074B40E8FB7E /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		B13DFF4364CDBB099BBDE3BCEF1BB42E /* CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBC.swift; path = Sources/CryptoSwift/BlockMode/CBC.swift; sourceTree = "<group>"; };
 		B464D7B8EB92A6CDC01ECE4A1CF0FD8C /* ZeroPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZeroPadding.swift; path = Sources/CryptoSwift/ZeroPadding.swift; sourceTree = "<group>"; };
 		B4AD2CACE0B99A0259AD2B5F2E9DE24C /* UInt16+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt16+Extension.swift"; path = "Sources/CryptoSwift/UInt16+Extension.swift"; sourceTree = "<group>"; };
-		B544EA21ABEC2D8B1BB50ADA5F2E96C2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B544EA21ABEC2D8B1BB50ADA5F2E96C2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BCB877D6A54402C90BCC2975FE83DD /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		B7FE499F967C69A9008FB4245A779C1B /* ESRefreshComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshComponent.swift; path = Sources/ESRefreshComponent.swift; sourceTree = "<group>"; };
 		B9A667246E5980C2B972EE547AA1310F /* AES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.swift; path = Sources/CryptoSwift/AES.swift; sourceTree = "<group>"; };
@@ -324,18 +324,18 @@
 		CC7E78524807350E1F51EBD97A03E5CC /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		CE3246FF97696006B400A4ED2AF1FB3E /* Checksum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = Sources/CryptoSwift/Checksum.swift; sourceTree = "<group>"; };
 		CED0E83C0735B8185DAEB720A035FD53 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
-		D03BE6B29347DD758CE1C817514CA190 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CryptoSwift.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03BE6B29347DD758CE1C817514CA190 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D379BFAFC3BF30D8E68899FBD0D1AEA4 /* CryptoSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.xcconfig; sourceTree = "<group>"; };
 		D3A698FA0DE2C7BAEAA8DC9FCE505821 /* ESRefreshProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshProtocol.swift; path = Sources/ESRefreshProtocol.swift; sourceTree = "<group>"; };
-		D4191DD29DA95AA3C9141172A6476B01 /* ESPullToRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ESPullToRefresh.framework; path = ESPullToRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4191DD29DA95AA3C9141172A6476B01 /* ESPullToRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESPullToRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0581574D1BDE01B55D021641484913 /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChaCha20+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
 		DAE44326F06D731309C771A3B01710ED /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
 		DC30B4C2D09BE2511D1E558748A203E1 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
 		DE6D3F9FAD3DFB87DF01F78FCABE7EEF /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
-		DF124DABA0DAEC12389E78A583916A8A /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
+		DF124DABA0DAEC12389E78A583916A8A /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
 		DFE958AD6AE2D353BF52D3348FAF9B47 /* ESRefreshAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESRefreshAnimator.swift; path = Sources/ESRefreshAnimator.swift; sourceTree = "<group>"; };
-		E105B61F57FD8F3B6782776AFBA18C9B /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
-		E1C22B545FFE0B59CEF89B2BD9C6D812 /* Pods-YGZongHeng.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YGZongHeng.modulemap"; sourceTree = "<group>"; };
+		E105B61F57FD8F3B6782776AFBA18C9B /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		E1C22B545FFE0B59CEF89B2BD9C6D812 /* Pods-YGZongHeng.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-YGZongHeng.modulemap"; sourceTree = "<group>"; };
 		E333DC6AB3E8C6CF3537AC9CA2966380 /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Sources/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
 		E3BF19F92C1AA19795C51528DDB68D37 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3C601D00A654E631CF10BDDB48FB07F /* ESPullToRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ESPullToRefresh.xcconfig; sourceTree = "<group>"; };
@@ -462,7 +462,6 @@
 				5EA5DEA756FBD9B095E67D66C307074D /* standard */,
 				7F7DFBE3CBC004B155B95FFC13DA5A53 /* Support Files */,
 			);
-			name = SQLite.swift;
 			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
@@ -472,7 +471,6 @@
 				9792F598EAA3D2221FC179A59DBDB302 /* SwiftyJSON.swift */,
 				2783F2C25A26D9BC6FD60CADAE4BD1BF /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -498,7 +496,6 @@
 				9D570EA45321BB540DC1EBFBB294F255 /* Validation.swift */,
 				8BC6D898D07EE8069CB39AF54FB8C5CF /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -528,7 +525,6 @@
 				8DFF7855093F11C23146CBB20DF84B82 /* Resources */,
 				01664C619504A9694E0B7F7847B5D5E3 /* Support Files */,
 			);
-			name = ESPullToRefresh;
 			path = ESPullToRefresh;
 			sourceTree = "<group>";
 		};
@@ -700,7 +696,6 @@
 				B464D7B8EB92A6CDC01ECE4A1CF0FD8C /* ZeroPadding.swift */,
 				75630809C1FB8D64F9E583B06FD00B3B /* Support Files */,
 			);
-			name = CryptoSwift;
 			path = CryptoSwift;
 			sourceTree = "<group>";
 		};
@@ -928,7 +923,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1392,6 +1387,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

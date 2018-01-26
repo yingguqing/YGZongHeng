@@ -137,7 +137,10 @@ class BookShelfViewController: BaseViewController,UIDocumentInteractionControlle
     }
     
     func documentInteractionControllerWillPresentOpenInMenu(_ controller: UIDocumentInteractionController) {
-        YGNoticeManager.default.clearWait()
+        // 延时3秒关闭
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
+            YGNoticeManager.default.clearWait()
+        })
     }
 }
 
