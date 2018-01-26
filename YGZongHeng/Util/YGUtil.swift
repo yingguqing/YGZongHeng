@@ -108,11 +108,13 @@ class YGUtil {
         }
     }
     
+    //MARK: 保存加解密的key和iv
     static func saveCrypt(key:String,iv:String) {
         saveKeychain(service: AESKey, data: key)
         saveKeychain(service: AESIV, data: iv)
     } 
     
+    //MARK: 读取保存的加解密的key和iv
     static func loadCrypt() -> Dictionary<String,String>? {
         if let key = loadKeychain(service: AESKey) as? String,
             let iv = loadKeychain(service: AESIV) as? String {
@@ -191,9 +193,9 @@ extension UIImageView {
             } else {
                 image = #imageLiteral(resourceName: "Recommend_Book") //默认图片
             }
-            showImageWith(image: image)
+            showImageWith(image: image) // 显示图片
         }
-        if isNeedDownload {
+        if isNeedDownload { // 需要下载图片
             NotificationCenter.default.addObserver(self, selector: #selector(imageFinishWith(noti:)), name: NSNotification.Name.init(urlMd5), object: nil)
             ImageCheckQueue.sync {// 本地没有图片,在线程里查看是否有下载任务
                 if ImageDownloadArray.contains(urlMd5) == false {

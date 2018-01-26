@@ -10,19 +10,30 @@ import UIKit
 import WebKit
 
 class ZonghengWebViewController: BaseViewController,WKNavigationDelegate {
+    
     @IBOutlet weak var bgView:UIView!
-    var webView: WKWebView?
+    var webView: WKWebView = WKWebView()
+    lazy var pre = YGPreferences.default
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        webView.navigationDelegate = self
+        self.view.addSubview(webView)
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if webView == nil {
-            webView = WKWebView(frame: bgView.frame)
-            webView!.navigationDelegate = self
+        if webView.url == nil {
             let url = "https://m.zongheng.com"
-            webView!.load(url.toURLRequest!)
-            self.view.addSubview(webView!)
+            webView.load(url.toURLRequest!)
             YGNoticeManager.default.showWait(time: 0, autoClear: false)
         }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        let frame = bgView.frame
+        webView.frame = frame
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
@@ -34,15 +45,21 @@ class ZonghengWebViewController: BaseViewController,WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        let url = navigationAction.request.url?.absoluteString;
-        let type = "bookid="
-        if let _ = url?.range(of: type)?.lowerBound,
-            let a = url?.components(separatedBy: "?"){
+        let url = navigationAction.request.url?.absoluteString
+        if pre.ZongHengType != "*" {
+            guard url?.range(of: pre.ZongHengType)?.lowerBound != nil else {
+                return decisionHandler(.cancel)
+            }
+        }
+        let type = pre.BookIdType
+        if let _ = url?.range(of: pre.DownloadType)?.lowerBound,
+            let _ = url?.range(of: type)?.lowerBound,
+            let a = url?.components(separatedBy: "?") {// 以？切分
             for value in a {
-                if let _ = value.range(of: type)?.lowerBound {
+                if let _ = value.range(of: type)?.lowerBound {//取带bookid那一段
                     let aa = value.components(separatedBy: "&")
                     for value in aa {
-                        if value.hasPrefix(type) {
+                        if value.hasPrefix(type) {//参数以bookid开头那一条
                             let bookId = value[type.count..<value.count]
                             YGBookView.showBookInfoWith(bookId: bookId)
                             return decisionHandler(.cancel)

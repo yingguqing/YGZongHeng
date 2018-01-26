@@ -90,16 +90,19 @@ class YGBookView: UIView {
         }
     }
     
+    //MARK: 关闭
     @IBAction func closeViewAction(_ sender: Any) {
         self.hide()
     }
     
+    //MARK: 添加到书架
     @IBAction func addToShelf(_ sender: Any) {
         bookData?.addToShelf()
         YGNotification.postNotification(notification: .AddBook, object: bookData, userInfo: nil)
         self.hide()
     }
     
+    //MARK: 下载小说
     @IBAction func downloadBookAction(_ sender: Any) {
         bookData?.addToShelf()
         bookData?.downloadBook()

@@ -28,6 +28,7 @@
 		DB2A95E41FF2898400B25DBD /* YGNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95E31FF2898400B25DBD /* YGNotification.swift */; };
 		DB4EB3211FFB0EDF006202E2 /* YGChapterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4EB3201FFB0EDF006202E2 /* YGChapterLabel.swift */; };
 		DB553CA81FF1DEB400504764 /* ChapterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB553CA71FF1DEB400504764 /* ChapterEntity.swift */; };
+		DB595137201ABECE0061327D /* YGPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB595136201ABECE0061327D /* YGPreferences.swift */; };
 		DB7D231D2004ACC3006D2314 /* Book.db in Resources */ = {isa = PBXBuildFile; fileRef = DB7D231C2004ACC3006D2314 /* Book.db */; };
 		DB7D231F2004AED3006D2314 /* YGDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7D231E2004AED3006D2314 /* YGDBManager.swift */; };
 		DB931F441FF0F4C4008EFA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB931F421FF0F4C4008EFA5E /* Main.storyboard */; };
@@ -92,6 +93,7 @@
 		DB2A95E31FF2898400B25DBD /* YGNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGNotification.swift; sourceTree = "<group>"; };
 		DB4EB3201FFB0EDF006202E2 /* YGChapterLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGChapterLabel.swift; sourceTree = "<group>"; };
 		DB553CA71FF1DEB400504764 /* ChapterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterEntity.swift; sourceTree = "<group>"; };
+		DB595136201ABECE0061327D /* YGPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGPreferences.swift; sourceTree = "<group>"; };
 		DB7D231C2004ACC3006D2314 /* Book.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Book.db; sourceTree = "<group>"; };
 		DB7D231E2004AED3006D2314 /* YGDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGDBManager.swift; sourceTree = "<group>"; };
 		DB931F391FF0F4C4008EFA5E /* YGZongHeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YGZongHeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +213,7 @@
 				DB2A95E31FF2898400B25DBD /* YGNotification.swift */,
 				DB4EB3201FFB0EDF006202E2 /* YGChapterLabel.swift */,
 				DB7D231E2004AED3006D2314 /* YGDBManager.swift */,
+				DB595136201ABECE0061327D /* YGPreferences.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				DB2A95CD1FF26A4700B25DBD /* TYAlertController+BlurEffects.m in Sources */,
 				DB2A95DA1FF26D2F00B25DBD /* YGBookView.swift in Sources */,
 				DB2A95D11FF26A4700B25DBD /* TYAlertDropDownAnimation.m in Sources */,
+				DB595137201ABECE0061327D /* YGPreferences.swift in Sources */,
 				DBC1D5242004FEF5007CBEFC /* ZonghengWebViewController.swift in Sources */,
 				DB2A95D81FF26A4700B25DBD /* UIView+TYAutoLayout.m in Sources */,
 				DB9320031FF130A5008EFA5E /* YGString.swift in Sources */,
