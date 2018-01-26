@@ -2,18 +2,19 @@
 //  YGChapterLabel.swift
 //  YGZongHeng
 //
-//  Created by wurw on 2018/1/2.
+//  Created by 影孤清 on 2018/1/2.
 //  Copyright © 2018年 yingguqing. All rights reserved.
 //
 
 import UIKit
 
+// 更新章节下载数的Label
 class YGChapterLabel: UILabel {
 
-    var _bookId:String?
+    var _bookId:String = ""
     var bookId:String {
         get {
-            return _bookId != nil ? _bookId! : ""
+            return _bookId
         }
         set {
             if newValue != _bookId {

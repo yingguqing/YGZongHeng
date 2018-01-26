@@ -2,7 +2,7 @@
 //  YGNetwork.swift
 //  YGZongHeng
 //
-//  Created by wurw on 2017/12/25.
+//  Created by 影孤清 on 2017/12/25.
 //  Copyright © 2017年 yingguqing. All rights reserved.
 //
 

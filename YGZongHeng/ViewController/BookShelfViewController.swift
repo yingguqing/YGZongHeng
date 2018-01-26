@@ -2,7 +2,7 @@
 //  FirstViewController.swift
 //  YGZongHeng
 //
-//  Created by wurw on 2017/12/25.
+//  Created by 影孤清 on 2017/12/25.
 //  Copyright © 2017年 yingguqing. All rights reserved.
 //
 
@@ -17,7 +17,7 @@ class BookShelfViewController: BaseViewController,UIDocumentInteractionControlle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadAllBookList()
+        bookArray = YGDBManager.default.queryShelfBooks()
         tableView.tableFooterView = UIView() 
         YGNotification.addObserver(observer: self, selector: #selector(addBookNotification(noti:)), notification: .AddBook)
         YGNotification.addObserver(observer: self, selector: #selector(updataStatusNotification(noti:)), notification: .DownloadBook)
@@ -40,6 +40,7 @@ class BookShelfViewController: BaseViewController,UIDocumentInteractionControlle
         }
     }
     
+    //MARK: 下载状态通知
     @objc func updataStatusNotification(noti:Notification) {
         if let userInfo = noti.userInfo {
             if let bookId = userInfo["bookId"] as? String,
@@ -55,6 +56,7 @@ class BookShelfViewController: BaseViewController,UIDocumentInteractionControlle
         reloadData()
     }
     
+    //MARK: 添加到书架通知
     @objc func addBookNotification(noti:Notification) {
         if let obj = noti.object,
             obj is BookEntity {
@@ -114,6 +116,7 @@ class BookShelfViewController: BaseViewController,UIDocumentInteractionControlle
         }
     }
     
+    //MARK: 生成txt文件
     func shareTextWith(book:BookEntity) {
         if book.status == .Downloading {
             YGNoticeManager.default.showText(text: "小说还在下载中。。。", time: YGNoticeManager.longTime, autoClear: true)
@@ -127,6 +130,7 @@ class BookShelfViewController: BaseViewController,UIDocumentInteractionControlle
         }
     }
     
+    //MARK: 用其他软件打开
     func showShareControllerWith(filePath:String) {
         DispatchQueue.main.async {
             self.documentController = UIDocumentInteractionController(url: filePath.toFileURL!)
@@ -146,6 +150,7 @@ class BookShelfViewController: BaseViewController,UIDocumentInteractionControlle
 
 extension BookShelfViewController:UITableViewDelegate,UITableViewDataSource {
     
+    //MARK: 显示小说简介
     @objc func showBookDetailWith(sender:UIButton) {
         if let cell = YGUtil.superUITableViewCell(of: sender),
             let indexPath = tableView.indexPath(for: cell) {
@@ -162,6 +167,7 @@ extension BookShelfViewController:UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         var actionArr = [UITableViewRowAction]()
+        // 左滑 移除 操作
         let remAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "移除") { (action, indexPath) in
             self.removeBookFromShelfWith(row: indexPath.row)
             tableView.isEditing = false
@@ -171,6 +177,7 @@ extension BookShelfViewController:UITableViewDelegate,UITableViewDataSource {
         let item = bookArray[indexPath.row]
         var hasFile = false
         if item.downloadChapter > 0 {
+            // 左滑 删除 操作
             let delAction = UITableViewRowAction(style: UITableViewRowActionStyle.destructive, title: "删除") { (action, indexPath) in
                 self.deleteDownloadBookWith(row: indexPath.row)
                 tableView.isEditing = false
@@ -180,6 +187,7 @@ extension BookShelfViewController:UITableViewDelegate,UITableViewDataSource {
             hasFile = true
         }
         let title = hasFile ? "更新" : "下载"
+        // 左滑 更新或下载 操作
         let duAction = UITableViewRowAction(style: UITableViewRowActionStyle.normal, title: title) { (action, indexPath) in
             tableView.isEditing = false
             tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.fade)

@@ -9,7 +9,6 @@
 import Foundation
 
 // Notification的扩展类,
-
 public protocol Notifier {//给这个协议增加一个关联类型
     associatedtype Notification: RawRepresentable
 }

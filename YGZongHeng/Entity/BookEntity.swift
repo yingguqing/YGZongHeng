@@ -2,7 +2,7 @@
 //  BookEntity.swift
 //  YGZongHeng
 //
-//  Created by wurw on 2017/12/25.
+//  Created by 影孤清 on 2017/12/25.
 //  Copyright © 2017年 yingguqing. All rights reserved.
 //
 
@@ -84,36 +84,47 @@ class BookEntity: NSObject {
         super.init()
     }
     
-    func updateWith(data:BookEntity) {
+    func updateWith(data:BookEntity) -> Bool {
+        var isChange = false
         if data.bookId.isEmpty == false && data.bookId == bookId {
             if bookDescription != data.bookDescription && data.bookDescription.isEmpty == false {
                 bookDescription = data.bookDescription
+                isChange = true
             }
             if coverUrl != data.coverUrl && data.coverUrl.isEmpty == false {
                 coverUrl = data.coverUrl
+                isChange = true
             }
             if authorName != data.authorName && data.authorName.isEmpty == false {
                 authorName = data.authorName
+                isChange = true
             }
             if bookName != data.bookName && data.bookName.isEmpty == false {
                 bookName = data.bookName
+                isChange = true
             }
             if categoryName != data.categoryName && data.categoryName.isEmpty == false {
                 categoryName = data.categoryName
+                isChange = true
             }
             if totalWord != data.totalWord && data.totalWord.isEmpty == false {
                 totalWord = data.totalWord
+                isChange = true
             }
             if updateTime != data.updateTime && data.updateTime.isEmpty == false {
                 updateTime = data.updateTime
+                isChange = true
             }
         }
+        return isChange
     }
     
+    //MARK: 添加下载章节数的通知
     func addNotification() {
         NotificationCenter.default.addObserver(self, selector: #selector(updaDownloadNum(noti:)), name: NSNotification.Name.init(rawValue: bookId), object: nil)
     }
     
+    //MARK: 移除所有通知
     func removeNotification() {
         NotificationCenter.default.removeObserver(self)
     }
@@ -125,14 +136,15 @@ class BookEntity: NSObject {
         }
     }
     
+    //MARK: 生成txt文件
     func createTextFileWith(block:@escaping (Bool)->()) {
         let dlCount = YGDBManager.default.queryChapterCountWith(bookId: bookId)
-        guard dlCount > 0 else {
+        guard dlCount > 0 else {// 数据库必须存在小说章节
             YGNoticeManager.default.clearAll()
             YGNoticeManager.default.showNoticeWithText(type: NoticeType.Error, text: "小说不存在,请先下载...", time: YGNoticeManager.shortTime, autoClear: true)
             return
         }
-        if dlCount == txtChapterCount {
+        if dlCount == txtChapterCount { // 生成txt章节数和下载的章节数相同
             return block(true)
         }
         weak var weakSelf = self
@@ -140,12 +152,12 @@ class BookEntity: NSObject {
             if let sself = weakSelf {
                 let array = YGDBManager.default.queryChapterWith(bookId: sself.bookId)
                 var text = String()
-                for value in array {
+                for value in array {// 将所有章节拼接到一起
                     text += value.chapterName + "\n" + value.content + "\n"
                 }
                 var isFinished = false
                 do {
-                    if sself.bookTxtPath.fileIsExists {
+                    if sself.bookTxtPath.fileIsExists { // 如果本地txt文件存在，删除本地存在的txt
                         try FileManager.default.removeItem(atPath: sself.bookTxtPath)
                     }
                     try text.write(toFile: sself.bookTxtPath, atomically: true, encoding: String.Encoding.utf8)

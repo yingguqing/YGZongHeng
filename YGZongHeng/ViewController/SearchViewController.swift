@@ -2,7 +2,7 @@
 //  SearchViewController.swift
 //  YGZongHeng
 //
-//  Created by wurw on 2017/12/26.
+//  Created by 影孤清 on 2017/12/26.
 //  Copyright © 2017年 yingguqing. All rights reserved.
 //
 
@@ -22,10 +22,6 @@ class SearchViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let btnCancel = searchBar.value(forKey: "_cancelButton") as? UIButton {
-            btnCancel.setTitle("搜索", for: .normal)
-            btnCancel.setTitleColor(UIColor.orange,for: .normal)
-        }
         tableView.tableFooterView = UIView.init(frame: CGRect.zero)
         var footer: ESRefreshProtocol & ESRefreshAnimatorProtocol
         footer = ESRefreshFooterAnimator.init(frame: CGRect.zero)
@@ -131,10 +127,6 @@ extension SearchViewController:UITableViewDelegate,UITableViewDataSource,UISearc
         self.view.endEditing(true)
         searchBar.text = nil
         loadSearchHistoryData()
-    }
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        //searchBookWith(text: searchBar.text, isSaveHistory: false)
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

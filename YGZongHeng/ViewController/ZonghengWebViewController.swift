@@ -2,7 +2,7 @@
 //  ZonghengWebViewController.swift
 //  YGZongHeng
 //
-//  Created by wurw on 2018/1/9.
+//  Created by 影孤清 on 2018/1/9.
 //  Copyright © 2018年 yingguqing. All rights reserved.
 //
 
@@ -46,15 +46,15 @@ class ZonghengWebViewController: BaseViewController,WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         let url = navigationAction.request.url?.absoluteString
-        if pre.ZongHengType != "*" {
+        if pre.ZongHengType != "*" {// 非*过滤其他地址跳转
             guard url?.range(of: pre.ZongHengType)?.lowerBound != nil else {
                 return decisionHandler(.cancel)
             }
         }
         let type = pre.BookIdType
-        if let _ = url?.range(of: pre.DownloadType)?.lowerBound,
-            let _ = url?.range(of: type)?.lowerBound,
-            let a = url?.components(separatedBy: "?") {// 以？切分
+        if let _ = url?.range(of: pre.DownloadType)?.lowerBound,// 有下载小说关键字段
+            let _ = url?.range(of: type)?.lowerBound, // 存在bookId字段
+            let a = url?.components(separatedBy: "?") {// 可以用？切分
             for value in a {
                 if let _ = value.range(of: type)?.lowerBound {//取带bookid那一段
                     let aa = value.components(separatedBy: "&")

@@ -2,7 +2,7 @@
 //  YGDBManager.swift
 //  YGZongHeng
 //
-//  Created by wurw on 2018/1/9.
+//  Created by 影孤清 on 2018/1/9.
 //  Copyright © 2018年 yingguqing. All rights reserved.
 //
 
@@ -34,7 +34,6 @@ class YGDBManager: NSObject {
     lazy var db = try Connection(dbPath)
     lazy var tbBook = Table("Book")// 小说简介表
     lazy var tbChapter = Table("Chapter") // 小说章节表
-    lazy var tbTest = Table("Test")
     
     private override init() {}
     
@@ -164,6 +163,8 @@ class YGDBManager: NSObject {
 }
 
 extension BookEntity {
+    
+    //MARK: 更新数据库的数据
     var dbData:[SQLite.Setter] {
         return [TMBookId <- bookId,
                 TMBookDescription <- bookDescription,
@@ -177,6 +178,7 @@ extension BookEntity {
                 TMShelf <- isShelfBook ? 1 : 0]
     }
     
+    //MARK: 以数据库数据初始化创建
     convenience init(row:Row) {
         self.init()
         bookId = row[TMBookId]

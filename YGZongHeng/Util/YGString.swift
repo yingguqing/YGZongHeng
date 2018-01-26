@@ -2,7 +2,7 @@
 //  UntitlString.swift
 //  TextBookFromHtml
 //
-//  Created by wurw on 2017/11/1.
+//  Created by 影孤清 on 2017/11/1.
 //  Copyright © 2017年 影孤清. All rights reserved.
 //
 
@@ -231,6 +231,7 @@ extension String {
         return ""
     }
     
+    //MARK: 计算文字高度（width最大宽度）
     func textHeigh(font:UIFont, width:CGFloat) -> CGFloat {
         let normalText: NSString = self as NSString
         let size = CGSize(width: width, height: 999999)
