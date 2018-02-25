@@ -9,7 +9,9 @@
 import UIKit
 //com.sijiu.newgamebox
 //com.yingguqing.YGZongHeng
+//com.sijiu.gbox
 let greenColor = UIColor(red: 52/255.0, green: 209/255.0, blue: 178/255.0, alpha: 1)
+
 class BaseViewController: UIViewController {
 
     override func viewDidLoad() {

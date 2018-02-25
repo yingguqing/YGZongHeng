@@ -18,6 +18,7 @@ class ZonghengWebViewController: BaseViewController,WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.navigationDelegate = self
+        webView.allowsBackForwardNavigationGestures = true
         self.view.addSubview(webView)
     }
     

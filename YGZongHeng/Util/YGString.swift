@@ -13,6 +13,7 @@ let AESKey = "SaveAESKey"
 let AESIV  = "SaveAESIV"
 
 extension String {
+    
     public func range(from nsRange: NSRange) -> Range<String.Index>? {
         guard
             let from16 = utf16.index(utf16.startIndex, offsetBy: nsRange.location, limitedBy: utf16.endIndex),
@@ -50,6 +51,7 @@ extension String {
             return (self as NSString).lastPathComponent
         }
     }
+    
     //MARK: 删除最后一个后缀
     ///删除最后一个后缀 可以是整个文件名,可以是文件夹名
     var deletingLastPathComponent:String {
@@ -96,6 +98,7 @@ extension String {
         }
     }
     
+    //MARK: 字符串转URL，参数：是否进行url编码
     public func toURL(isPercentEncoding:Bool) -> URL? {
         if isPercentEncoding {// 是否进行url编码
             if self.isEmpty == false,
@@ -125,6 +128,7 @@ extension String {
         }
     }
     
+    //MARK: 生成字符串的首字母
     var chineseInitials:String {
         get {
             if let str1 = self.applyingTransform(StringTransform.toLatin, reverse: false) {
@@ -162,12 +166,12 @@ extension String {
         return validIndex(original:original)
     }
     
+    //MARK: 字符串截取（格式：a[0...10]）
     subscript(_ range: CountableRange<Int>) -> String {
         guard
             let startIndex = validStartIndex(original: range.lowerBound),
             let endIndex   = validEndIndex(original: range.upperBound),
-            startIndex < endIndex
-            else {
+            startIndex < endIndex else {
                 return ""
         }
         return String(self[startIndex..<endIndex])

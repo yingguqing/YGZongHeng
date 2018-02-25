@@ -194,7 +194,7 @@ extension BookShelfViewController:UITableViewDelegate,UITableViewDataSource {
             item.downloadBook()
         }
         duAction.backgroundColor = UIColor.green
-        actionArr.append(duAction)
+        actionArr.append(duAction) 
         return actionArr
     }
     
