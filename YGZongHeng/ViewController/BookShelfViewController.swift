@@ -22,11 +22,34 @@ class BookShelfViewController: BaseViewController,UIDocumentInteractionControlle
         YGNotification.addObserver(observer: self, selector: #selector(addBookNotification(noti:)), notification: .AddBook)
         YGNotification.addObserver(observer: self, selector: #selector(updataStatusNotification(noti:)), notification: .DownloadBook)
         //YGNotification.addObserver(observer: self, selector: #selector(reloadData), notification: .ReloadData)
+        let rightButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addBook(_:)))
+        let item = UINavigationItem(title: "")
+        item.rightBarButtonItem = rightButton
+        self.navigationController?.navigationBar.setItems([item], animated: true)
     }
+    
+    @objc func addBook(_ sender: Any) {
+        let alertController = UIAlertController(title: "添加新书", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addTextField {(textField: UITextField!) -> Void in
+            textField.placeholder = "输入书的ID"
+            textField.keyboardType = .namePhonePad
+        }
+        let actionAdd = UIAlertAction(title: "添加", style: UIAlertActionStyle.default) { (action) in
+            if let bookId = alertController.textFields?.first?.text, bookId.isEmpty == false {
+                YGBookView.showBookInfoWith(bookId: bookId)
+            }
+        }
+        let actionCancel = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        alertController.addAction(actionAdd)
+        alertController.addAction(actionCancel)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         YGUtil.showInputAlertView()
+        //YGBookView.showBookInfoWith(bookId: "435710")
     }
     
     func loadAllBookList() {

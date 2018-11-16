@@ -9,6 +9,8 @@
 import UIKit
 import WebKit
 
+var ScanUrl = ""
+
 class ZonghengWebViewController: BaseViewController,WKNavigationDelegate {
     
     @IBOutlet weak var bgView:UIView!
@@ -27,6 +29,9 @@ class ZonghengWebViewController: BaseViewController,WKNavigationDelegate {
         if webView.url == nil {
             let url = "https://m.zongheng.com"
             webView.load(url.toURLRequest!)
+            YGNoticeManager.default.showWait(time: 0, autoClear: false)
+        } else if ScanUrl.isEmpty == false {
+            webView.load(ScanUrl.toURLRequest!)
             YGNoticeManager.default.showWait(time: 0, autoClear: false)
         }
     }

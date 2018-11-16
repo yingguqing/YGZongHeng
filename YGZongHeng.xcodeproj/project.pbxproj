@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		763F1563AC3F9FB3C09042FF /* Pods_YGZongHeng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2040325F751DFACB1219C82F /* Pods_YGZongHeng.framework */; };
+		DB1393B92042CBF8005D531B /* ScanCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1393B82042CBF7005D531B /* ScanCodeController.swift */; };
 		DB2A95B01FF23ADB00B25DBD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95AF1FF23ADB00B25DBD /* BaseViewController.swift */; };
 		DB2A95B21FF2533700B25DBD /* YGNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95B11FF2533700B25DBD /* YGNotice.swift */; };
 		DB2A95CD1FF26A4700B25DBD /* TYAlertController+BlurEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A95B61FF26A4700B25DBD /* TYAlertController+BlurEffects.m */; };
@@ -62,6 +63,7 @@
 		2040325F751DFACB1219C82F /* Pods_YGZongHeng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YGZongHeng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		902993E565F77E5377470D32 /* Pods-YGZongHeng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YGZongHeng.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YGZongHeng/Pods-YGZongHeng.debug.xcconfig"; sourceTree = "<group>"; };
 		D9551296B8D541B8681C776B /* Pods-YGZongHeng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YGZongHeng.release.xcconfig"; path = "Pods/Target Support Files/Pods-YGZongHeng/Pods-YGZongHeng.release.xcconfig"; sourceTree = "<group>"; };
+		DB1393B82042CBF7005D531B /* ScanCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanCodeController.swift; sourceTree = "<group>"; };
 		DB2A95AF1FF23ADB00B25DBD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DB2A95B11FF2533700B25DBD /* YGNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGNotice.swift; sourceTree = "<group>"; };
 		DB2A95B51FF26A4700B25DBD /* TYAlertController+BlurEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TYAlertController+BlurEffects.h"; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				DB9320051FF130C3008EFA5E /* BookShelfViewController.swift */,
 				DBC1D5232004FEF5007CBEFC /* ZonghengWebViewController.swift */,
 				DBD20F691FF216CB004A40FF /* SearchViewController.swift */,
+				DB1393B82042CBF7005D531B /* ScanCodeController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				DB2A95B01FF23ADB00B25DBD /* BaseViewController.swift in Sources */,
 				DB2A95CD1FF26A4700B25DBD /* TYAlertController+BlurEffects.m in Sources */,
 				DB2A95DA1FF26D2F00B25DBD /* YGBookView.swift in Sources */,
+				DB1393B92042CBF8005D531B /* ScanCodeController.swift in Sources */,
 				DB2A95D11FF26A4700B25DBD /* TYAlertDropDownAnimation.m in Sources */,
 				DB595137201ABECE0061327D /* YGPreferences.swift in Sources */,
 				DBC1D5242004FEF5007CBEFC /* ZonghengWebViewController.swift in Sources */,
@@ -491,9 +495,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2KKFC728Z9;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -549,9 +554,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2KKFC728Z9;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -578,16 +584,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = BCK67L35WR;
+				DEVELOPMENT_TEAM = DNHTA75LAT;
 				INFOPLIST_FILE = "$(SRCROOT)/YGZongHeng/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sijiu.gbox;
+				PRODUCT_BUNDLE_IDENTIFIER = ayxd.dslh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "167d5709-4006-412b-9a19-582cc2b9631c";
-				PROVISIONING_PROFILE_SPECIFIER = sijiubox;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = ayxddev;
 				SWIFT_OBJC_BRIDGING_HEADER = "YGZongHeng/Other/YGZongHeng-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -603,16 +610,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = BCK67L35WR;
+				DEVELOPMENT_TEAM = DNHTA75LAT;
 				INFOPLIST_FILE = "$(SRCROOT)/YGZongHeng/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sijiu.gbox;
+				PRODUCT_BUNDLE_IDENTIFIER = ayxd.dslh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "167d5709-4006-412b-9a19-582cc2b9631c";
-				PROVISIONING_PROFILE_SPECIFIER = sijiubox;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = ayxddis;
 				SWIFT_OBJC_BRIDGING_HEADER = "YGZongHeng/Other/YGZongHeng-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

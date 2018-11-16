@@ -31,7 +31,7 @@ class YGDBManager: NSObject {
     static let `default` = YGDBManager()
     
     let dbPath = documentPath.appending(pathComponent: "Book.db")
-    lazy var db = try Connection(dbPath)
+    lazy var db = try? Connection(dbPath)
     lazy var tbBook = Table("Book")// 小说简介表
     lazy var tbChapter = Table("Chapter") // 小说章节表
     
@@ -54,7 +54,7 @@ class YGDBManager: NSObject {
     func queryShelfBooks() -> Array<BookEntity> {
         let alice = tbBook.filter(TMShelf == 1)
         var array = Array<BookEntity>()
-        if let books = try? db.prepare(alice) {
+        if let db = db, let books = try? db.prepare(alice) {
             for value in books {
                 let item = BookEntity(row: value)
                 array.append(item)
@@ -66,7 +66,7 @@ class YGDBManager: NSObject {
     //MARK: 根据小说id查询小说
     func queryBookWith(bookId:String) -> BookEntity? {
         let alice = tbBook.filter(TMBookId == bookId)
-        if let books = try? db.prepare(alice) {
+        if let db = db, let books = try? db.prepare(alice) {
             for value in books {
                 return BookEntity(row: value)
             }
@@ -78,7 +78,7 @@ class YGDBManager: NSObject {
     func insertBookWith(data:BookEntity) {
         let insert = tbBook.insert(data.dbData)
         do {
-            try db.run(insert)
+            try db?.run(insert)
         } catch let error as NSError {
             print("插入数据失败 \(error.localizedDescription)")
         }
@@ -88,7 +88,7 @@ class YGDBManager: NSObject {
     func updateBookWith(data:BookEntity) {
         let alice = tbBook.filter(TMBookId == data.bookId)
         do {
-            try db.run(alice.update(data.dbData))
+            try db?.run(alice.update(data.dbData))
         } catch let error as NSError {
             print("修改数据失败 \(error.localizedDescription)")
         }
@@ -97,7 +97,7 @@ class YGDBManager: NSObject {
     //MARK: 批量插入小说章节数据
     func insertChapterWith(array:Array<ChapterEntity>) {
         do {
-            try db.transaction(.deferred) {
+            try db?.transaction(.deferred) {
                 for value in array {
                     insertChapterWith(data: value)
                 }
@@ -111,7 +111,7 @@ class YGDBManager: NSObject {
     func insertChapterWith(data:ChapterEntity) {
         let insert = tbChapter.insert(data.dbData)
         do {
-            try db.run(insert)
+            try db?.run(insert)
         } catch let error as NSError {
             print("插入章节数据失败 \(error.localizedDescription)")
         }
@@ -121,7 +121,7 @@ class YGDBManager: NSObject {
     func queryChapterWith(bookId:String) -> Array<ChapterEntity> {
         let alice = tbChapter.filter(TMBookId == bookId).order(TMChapterId.asc)
         var array = Array<ChapterEntity>()
-        if let chapters = try? db.prepare(alice) {
+        if let db = db, let chapters = try? db.prepare(alice) {
             for value in chapters {
                 let item = ChapterEntity(row: value)
                 array.append(item)
@@ -133,7 +133,7 @@ class YGDBManager: NSObject {
     //MARK: 根据小说id查询本地下载的章节的最大的章节id
     func queryChapterLastIdWith(bookId:String) -> String {
         let alice = tbChapter.filter(TMBookId == bookId).order(TMChapterId.desc).limit(1)
-        if let chapters = try? db.prepare(alice) {
+        if let db = db, let chapters = try? db.prepare(alice) {
             for value in chapters {
                 let id = value[TMChapterId]
                 return String(id)
@@ -145,7 +145,7 @@ class YGDBManager: NSObject {
     //MARK: 根据小说id查询下载的章节数
     func queryChapterCountWith(bookId:String) -> Int {
         let alice = tbChapter.filter(TMBookId == bookId)
-        if let count = try? db.scalar(alice.count) as Int {
+        if let db = db, let count = try? db.scalar(alice.count) as Int {
             return count
         }
         return 0
@@ -155,7 +155,7 @@ class YGDBManager: NSObject {
     func deleteAllChapterWith(bookId:String) {
         let alice = tbChapter.filter(TMBookId == bookId)
         do {
-            try db.run(alice.delete())
+            try db?.run(alice.delete())
         } catch let error as NSError {
             print("删除章节数据失败 \(error.localizedDescription)")
         }
