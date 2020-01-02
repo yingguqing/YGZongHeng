@@ -31,7 +31,7 @@ class ScanCodeController: UIViewController {
         setupMaskView()
         setupScanView()
         scaning()
-        NotificationCenter.default.addObserver(self, selector: #selector(resetAnimatinon), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(resetAnimatinon), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     
     deinit {

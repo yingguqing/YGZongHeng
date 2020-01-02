@@ -144,8 +144,8 @@ class YGDBManager: NSObject {
     
     //MARK: 根据小说id查询下载的章节数
     func queryChapterCountWith(bookId:String) -> Int {
-        let alice = tbChapter.filter(TMBookId == bookId)
-        if let db = db, let count = try? db.scalar(alice.count) as Int {
+        let alice = tbChapter.filter(TMBookId == bookId).count
+        if let db = db, let count = try? db.scalar(alice) {
             return count
         }
         return 0

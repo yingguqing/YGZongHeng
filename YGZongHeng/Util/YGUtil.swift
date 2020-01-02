@@ -19,14 +19,14 @@ class YGUtil {
     //MARK: 显示输入解密ket和iv的弹出框
     static func showInputAlertView() {
         guard "a".encrypt != "jA==" else {return}
-        let alertController = UIAlertController(title: "提示", message: "请输入解密的key和iv", preferredStyle: UIAlertControllerStyle.alert)
+        let alertController = UIAlertController(title: "提示", message: "请输入解密的key和iv", preferredStyle: UIAlertController.Style.alert)
         alertController.addTextField {(textField: UITextField!) -> Void in
             textField.placeholder = "输入key"
         }
         alertController.addTextField { (textField: UITextField!) -> Void in
             textField.placeholder = "输入iv"
         }
-        let okAction = UIAlertAction(title: "确定", style: UIAlertActionStyle.default) { (action) in
+        let okAction = UIAlertAction(title: "确定", style: UIAlertAction.Style.default) { (action) in
             if let key = alertController.textFields?.first?.text,
                 let iv = alertController.textFields?.last?.text {
                 YGUtil.saveCrypt(key: key, iv: iv)
@@ -42,10 +42,10 @@ class YGUtil {
     static var topViewController:UIViewController {
         var result:UIViewController
         var window = UIApplication.shared.keyWindow
-        if window?.window?.windowLevel != UIWindowLevelNormal {
+        if window?.window?.windowLevel != UIWindow.Level.normal {
             let windows = UIApplication.shared.windows
             for tmpWin in windows {
-                if tmpWin.windowLevel == UIWindowLevelNormal {
+                if tmpWin.windowLevel == UIWindow.Level.normal {
                     window = tmpWin
                 }
             }
@@ -65,8 +65,8 @@ class YGUtil {
         guard message?.isEmpty == false else {
             return
         }
-        let alertView = UIAlertController.init(title: "提示", message: message, preferredStyle: UIAlertControllerStyle.alert)
-        alertView.addAction(UIAlertAction.init(title: "确定", style: UIAlertActionStyle.cancel, handler: nil))
+        let alertView = UIAlertController.init(title: "提示", message: message, preferredStyle: UIAlertController.Style.alert)
+        alertView.addAction(UIAlertAction.init(title: "确定", style: UIAlertAction.Style.cancel, handler: nil))
         alertView.show(topViewController, sender: nil)
     }
     

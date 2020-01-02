@@ -239,7 +239,7 @@ extension String {
     func textHeigh(font:UIFont, width:CGFloat) -> CGFloat {
         let normalText: NSString = self as NSString
         let size = CGSize(width: width, height: 999999)
-        let dic = [NSAttributedStringKey.font:font]
+        let dic = [NSAttributedString.Key.font:font]
         let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: dic, context:nil).size
         return stringSize.height
     }

@@ -11,7 +11,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.5)
   - CryptoSwift (~> 0.7.1)
   - ESPullToRefresh
-  - SQLite.swift (~> 0.11.4)
+  - SQLite.swift
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -21,6 +21,6 @@ SPEC CHECKSUMS:
   SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 88fc6f0a5ab0bb5e182315b61a556a645d7b81a4
+PODFILE CHECKSUM: 64fd18a246eb5d7f5051a3660d2e5c9e853fda0d
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

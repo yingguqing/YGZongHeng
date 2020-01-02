@@ -189,7 +189,7 @@ extension SearchViewController:UITableViewDelegate,UITableViewDataSource,UISearc
         } else {
             var cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell")
             if cell == nil {
-                cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "SearchCell")
+                cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "SearchCell")
             }
             cell?.textLabel?.text = datas[indexPath.row]
             return cell!

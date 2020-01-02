@@ -278,7 +278,7 @@ class YGNoticeView:UIView{
         self.layer.cornerRadius = 10
         self.backgroundColor = UIColor(red:0, green:0, blue:0, alpha: 0.8)
         
-        let ai = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
+        let ai = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.whiteLarge)
         ai.frame = CGRect.init(x: 21, y: 21, width: 36, height: 36)
         ai.startAnimating()
         self.addSubview(ai)
@@ -531,14 +531,14 @@ extension UILabel{
     func sizeToFixWidth(){
         let fitString = self.text! as NSString
         let maxSize = CGSize(width: CGFloat.greatestFiniteMagnitude, height: self.bounds.height)
-        let fitWidth = fitString.boundingRect(with: maxSize, options: NSStringDrawingOptions.usesFontLeading, attributes: [NSAttributedStringKey.font:self.font], context: nil).width
+        let fitWidth = fitString.boundingRect(with: maxSize, options: NSStringDrawingOptions.usesFontLeading, attributes: [NSAttributedString.Key.font:self.font], context: nil).width
         self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: fitWidth, height: self.frame.height)
     }
     
     func sizeToFix(){
         let fitString = self.text! as NSString
         let maxSize = CGSize(width: CGFloat.greatestFiniteMagnitude, height: self.bounds.height)
-        let fitSize = fitString.boundingRect(with: maxSize, options: NSStringDrawingOptions.usesFontLeading, attributes: [NSAttributedStringKey.font:self.font], context: nil)
+        let fitSize = fitString.boundingRect(with: maxSize, options: NSStringDrawingOptions.usesFontLeading, attributes: [NSAttributedString.Key.font:self.font], context: nil)
         self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: fitSize.width, height: fitSize.height)
     }
     

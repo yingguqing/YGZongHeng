@@ -98,16 +98,20 @@ extension String {
 
 }
 
+private func trimName(_ function: String) -> String {
+    return function.components(separatedBy: "(").first ?? function
+}
+
 func infix<T>(_ lhs: Expressible, _ rhs: Expressible, wrap: Bool = true, function: String = #function) -> Expression<T> {
-    return function.infix(lhs, rhs, wrap: wrap)
+    return trimName(function).infix(lhs, rhs, wrap: wrap)
 }
 
 func wrap<T>(_ expression: Expressible, function: String = #function) -> Expression<T> {
-    return function.wrap(expression)
+    return trimName(function).wrap(expression)
 }
 
 func wrap<T>(_ expressions: [Expressible], function: String = #function) -> Expression<T> {
-    return function.wrap(", ".join(expressions))
+    return trimName(function).wrap(", ".join(expressions))
 }
 
 func transcode(_ literal: Binding?) -> String {

@@ -16,7 +16,7 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor:greenColor], for: UIControlState.selected)
+        self.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:greenColor], for: UIControl.State.selected)
     }
 
     override func viewWillAppear(_ animated: Bool) {

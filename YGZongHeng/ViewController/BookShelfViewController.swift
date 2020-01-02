@@ -29,12 +29,12 @@ class BookShelfViewController: BaseViewController,UIDocumentInteractionControlle
     }
     
     @objc func addBook(_ sender: Any) {
-        let alertController = UIAlertController(title: "添加新书", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        let alertController = UIAlertController(title: "添加新书", message: "", preferredStyle: UIAlertController.Style.alert)
         alertController.addTextField {(textField: UITextField!) -> Void in
             textField.placeholder = "输入书的ID"
             textField.keyboardType = .namePhonePad
         }
-        let actionAdd = UIAlertAction(title: "添加", style: UIAlertActionStyle.default) { (action) in
+        let actionAdd = UIAlertAction(title: "添加", style: UIAlertAction.Style.default) { (action) in
             if let bookId = alertController.textFields?.first?.text, bookId.isEmpty == false {
                 YGBookView.showBookInfoWith(bookId: bookId)
             }
@@ -191,17 +191,17 @@ extension BookShelfViewController:UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         var actionArr = [UITableViewRowAction]()
         // 左滑 移除 操作
-        let remAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "移除") { (action, indexPath) in
+        let remAction = UITableViewRowAction(style: UITableViewRowAction.Style.default, title: "移除") { (action, indexPath) in
             self.removeBookFromShelfWith(row: indexPath.row)
             tableView.isEditing = false
-            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
         }
         actionArr.append(remAction)
         let item = bookArray[indexPath.row]
         var hasFile = false
         if item.downloadChapter > 0 {
             // 左滑 删除 操作
-            let delAction = UITableViewRowAction(style: UITableViewRowActionStyle.destructive, title: "删除") { (action, indexPath) in
+            let delAction = UITableViewRowAction(style: UITableViewRowAction.Style.destructive, title: "删除") { (action, indexPath) in
                 self.deleteDownloadBookWith(row: indexPath.row)
                 tableView.isEditing = false
             }
@@ -211,9 +211,9 @@ extension BookShelfViewController:UITableViewDelegate,UITableViewDataSource {
         }
         let title = hasFile ? "更新" : "下载"
         // 左滑 更新或下载 操作
-        let duAction = UITableViewRowAction(style: UITableViewRowActionStyle.normal, title: title) { (action, indexPath) in
+        let duAction = UITableViewRowAction(style: UITableViewRowAction.Style.normal, title: title) { (action, indexPath) in
             tableView.isEditing = false
-            tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+            tableView.reloadRows(at: [indexPath], with: UITableView.RowAnimation.fade)
             item.downloadBook()
         }
         duAction.backgroundColor = UIColor.green
@@ -234,7 +234,7 @@ extension BookShelfViewController:UITableViewDelegate,UITableViewDataSource {
         if cell == nil {
             cell = Bundle.main.loadNibNamed("BookCell", owner: self, options: nil)?.last as? UITableViewCell
             let button = cell!.viewWithTag(8) as! UIButton
-            button.addTarget(self, action: #selector(showBookDetailWith(sender:)), for: UIControlEvents.touchUpInside)
+            button.addTarget(self, action: #selector(showBookDetailWith(sender:)), for: UIControl.Event.touchUpInside)
         }
         let item = bookArray[indexPath.row]
         let imageView = cell?.viewWithTag(1) as! UIImageView
